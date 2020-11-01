@@ -1,0 +1,70 @@
+.title-adquirir {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+
+  h1 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+
+    span {
+      color: #3acf2b;
+    }
+
+  }
+}
+
+#adquirir {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+
+    .gif {
+      width: 60%;
+      box-shadow: 1px 1px 5px #1a1a1a;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    a {
+      width: 540px;
+      color: #fff;
+      text-decoration: none;
+      background: #3acf2b;
+      padding: 20px 50px;
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-family: 'Allerta Stencil';
+      transition: background 1s;
+
+      &:hover {
+          background: #3bb78f;
+      }
+    }
+
+    img {
+      width: 350px;
+    }
+
+  }
+}

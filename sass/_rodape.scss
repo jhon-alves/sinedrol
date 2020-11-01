@@ -1,0 +1,46 @@
+footer {
+  background: #101010;
+  width: 100%;
+  height: auto;
+
+  .container {
+    padding: 30px;
+
+    .row {
+
+      .col-sm {
+
+        h3 {
+          font-size: 23px;
+          color: #fff;
+          padding-bottom: 15px;
+        }
+
+        p {
+          color: #ccc;
+
+          span {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+
+        .fm-pagamento {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.copy {
+  background: #101010;
+  border-top: 1px solid #333;
+  padding: 10px 0;
+
+  p {
+    color: #ccc;
+    text-align: center;
+    margin: 0;
+  }
+}

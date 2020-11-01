@@ -1,0 +1,46 @@
+.title-sobre {
+  background: #101010;
+  padding-top: 50px;
+  
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+
+    span {
+      color: #fff300;
+    }
+  }
+}
+
+#sobre {
+  background: #101010;
+  width: 100%;
+  .container {
+    padding: 40px;
+    
+    .row {
+
+      .col-sm {
+
+        img {
+          width: 170px;
+        }
+
+        h3 {
+          font-weight: 600;
+          padding-top: 20px;
+          color: #fff;
+        }
+
+        p {
+          padding: 10px;
+          line-height: 27px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

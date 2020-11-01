@@ -1,0 +1,49 @@
+#garantia {
+  background-image: url('../img/garantia-bg.jpg');
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    padding: 50px;
+
+    .row {
+
+      .col-sm {
+
+        h1 {
+          font-size: 46px;
+          font-weight: 800;
+          color: #fff300;
+          padding: 5px 0;
+          text-align: center;
+          text-transform: uppercase;
+
+          span {
+            color: #3acf2b;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          color: #fff;
+          padding: 5px 0;
+          text-align: left;
+
+          span {
+            color: #3acf2b;
+          }
+        }
+
+        img {
+          float: right;
+        }
+      }
+    }
+  }
+
+
+}
