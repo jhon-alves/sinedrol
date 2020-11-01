@@ -6,7 +6,7 @@
   
   h1 {
     color: #fff;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 800;
     text-align: center;
     margin: 0 auto;
@@ -32,7 +32,7 @@
     padding: 40px;
     
     .accordion-item {
-      background: #283042;
+      background: #ffff00;
       border-radius: .4rem;
       margin-bottom: 1rem;
       padding: 1rem;
@@ -40,9 +40,10 @@
 
       .accordion-link {
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, .8);
+        font-weight: 600;
+        color: #000;
         text-decoration: none;
-        background: #283042;
+        background: #ffff00;
         width: 100%;
         display: flex;
         align-items: center;
@@ -62,8 +63,9 @@
         max-height: 0;
         overflow: hidden;
         position: relative;
-        background-color: #212838;
+        background-color: #101010;
         transition: max-height 650ms;
+        border-radius: .4rem;
 
         &::before {
           color: "";
@@ -77,7 +79,7 @@
         }
       }
       .answer p {
-        color: rgba(255, 255, 255, .6);
+        color:#fff;
         font-size: 1rem;
         padding: 1rem;
       }
