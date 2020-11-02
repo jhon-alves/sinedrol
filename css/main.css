@@ -259,7 +259,16 @@ header .logo {
 }
 
 #sobre .container {
-  padding: 40px;
+  padding: 40px 0;
+}
+
+#sobre .container .row {
+  width: 100%;
+  padding: 0 10px;
+}
+
+#sobre .container .row .col-sm {
+  padding: 0;
 }
 
 #sobre .container .row .col-sm img {
@@ -600,7 +609,6 @@ header .logo {
 footer {
   background: #101010;
   width: 100%;
-  height: auto;
 }
 
 footer .container {
@@ -645,6 +653,9 @@ footer .container .row .col-sm .fm-pagamento {
 }
 
 @media only screen and (max-width: 800px) {
+  * {
+    margin: 0 auto;
+  }
   header {
     border-bottom: 3px solid #101010;
   }
@@ -655,32 +666,10 @@ footer .container .row .col-sm .fm-pagamento {
     display: none;
   }
   #banner {
-    padding: 10px;
+    padding: 10px 0;
+    margin: 0;
   }
-  #banner .container-fluid .row .col-sm img {
-    width: 90%;
-  }
-  #banner .container-fluid .row .col-sm h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  #banner .container-fluid .row .col-sm p {
-    text-align: center;
-  }
-  #banner .container-fluid .row .col-sm a {
-    width: 100%;
-  }
-  #saches h1 {
-    font-size: 30px;
-  }
-  #saches .container .row {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #saches .container .row .col-sm {
+  #banner .container-fluid .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,10 +679,84 @@ footer .container .row .col-sm .fm-pagamento {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #banner .container-fluid .row .col-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #banner .container-fluid .row .col-sm img {
+    width: 85%;
+  }
+  #banner .container-fluid .row .col-sm h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #banner .container-fluid .row .col-sm a {
+    width: 90%;
+    padding: 10px;
+  }
+  #saches h1 {
+    font-size: 30px;
+  }
+  #saches .container .row {
     width: 100%;
+  }
+  #saches .container .row .col-sm {
+    width: 100%;
+    padding-top: 30px;
+    margin: 0 auto;
   }
   #saches .container .row .col-sm a img {
     width: 270px;
+  }
+  .title-resultados .container {
+    margin: 0;
+    padding: 0;
+  }
+  #resultados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #resultados .container {
+    padding: 10px 0;
+  }
+  #resultados .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #resultados .container .row .col-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+  }
+  #resultados .container .row .col-sm .foto1, #resultados .container .row .col-sm .foto2 {
+    width: 80%;
   }
   #garantia .container .row .col-sm h1 {
     text-align: center;
@@ -705,6 +768,16 @@ footer .container .row .col-sm .fm-pagamento {
     font-size: 34px;
     width: 350px;
     padding: 20px;
+  }
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+  footer .container .row {
+    width: 100%;
+  }
+  footer .container .row .col-sm {
+    padding: 20px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
