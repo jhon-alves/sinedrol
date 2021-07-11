@@ -31,6 +31,7 @@
     
             .row {
                 width: 400px;
+                flex-direction: column;
 
                 .col-sm {
                     display: flex;
@@ -72,6 +73,7 @@
           
           .row {
             margin: 0 auto;
+            flex-direction: column;
 
             .text-center {
                 margin: 0;

@@ -126,8 +126,7 @@ header .logo {
 }
 
 #banner .container .row .col-sm p .check {
-  font-size: 25px;
-  font-weight: 800;
+  width: 20px;
   margin: 0;
   padding-right: 5px;
 }
@@ -683,6 +682,10 @@ footer .container .row .col-sm .fm-pagamento {
   }
   #banner .container .row {
     width: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #banner .container .row .col-sm {
     display: -webkit-box;
@@ -715,6 +718,10 @@ footer .container .row .col-sm .fm-pagamento {
   }
   #sobre .container .row {
     margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #sobre .container .row .text-center {
     margin: 0;
@@ -910,7 +917,8 @@ footer .container .row .col-sm .fm-pagamento {
 
 @media screen and (max-width: 800px) {
   .btn-buy {
-    width: 300px;
+    width: 280px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
