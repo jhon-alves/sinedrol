@@ -206,6 +206,7 @@ header .logo {
 #saches .bg-color .container .row .col-sm {
   width: auto;
   margin: 0;
+  padding: 0;
 }
 
 #saches .bg-color .container .row .col-sm a .box {
@@ -740,7 +741,7 @@ footer .container .row .col-sm .fm-pagamento {
   }
   #saches .bg-color .container .row .col-sm {
     width: auto;
-    padding-top: 30px;
+    padding: 30px 0;
     margin: 0 auto;
   }
   #sobre .container .row {
@@ -829,7 +830,7 @@ footer .container .row .col-sm .fm-pagamento {
     width: 100%;
   }
   footer .container .row .col-sm {
-    padding: 20px 0;
+    padding: 20px 0px;
   }
 }
 
