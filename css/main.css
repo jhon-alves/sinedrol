@@ -440,23 +440,10 @@ header .logo {
 #duvidas {
   background: #101010;
   width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #duvidas .container {
-  width: 100%;
-  max-width: 60rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,84 +457,66 @@ header .logo {
   padding: 40px;
 }
 
-#duvidas .container .accordion {
-  margin-bottom: 20px;
-}
-
-#duvidas .container .accordion .accordion-item {
-  background: #ffff00;
-  border-radius: .4rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-#duvidas .container .accordion .accordion-item .accordion-link {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
-  background: #ffff00;
+#duvidas .container .faq {
   width: 100%;
+  color: #fff;
+}
+
+#duvidas .container .faq .faq-list {
+  margin: 50px auto;
+}
+
+#duvidas .container .faq .faq-list .faq-question,
+#duvidas .container .faq .faq-list .faq-answer {
+  background: #303030;
+}
+
+#duvidas .container .faq .faq-list .faq-question {
+  padding: 20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 1px;
+  font-size: 20px;
 }
 
-#duvidas .container .accordion .accordion-item .accordion-link ion-icon {
-  color: #e7d5ff;
-  padding: .5rem;
+#duvidas .container .faq .faq-list .faq-question::after {
+  content: " ";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/x.svg") no-repeat center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
-#duvidas .container .accordion .accordion-item .accordion-link .ion-md-remove {
-  display: none;
+#duvidas .container .faq .faq-list .faq-question.active::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-#duvidas .container .accordion .accordion-item .answer {
+#duvidas .container .faq .faq-list .faq-answer {
   max-height: 0;
   overflow: hidden;
-  position: relative;
-  background-color: #101010;
-  -webkit-transition: max-height 650ms;
-  transition: max-height 650ms;
-  border-radius: .4rem;
+  -webkit-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
 }
 
-#duvidas .container .accordion .accordion-item .answer::before {
-  color: "";
-  position: absolute;
-  width: .6rem;
-  height: 90%;
-  background: #8fc460;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+#duvidas .container .faq .faq-list .faq-answer p {
+  font-size: 17px;
+  padding: 20px 30px;
 }
 
-#duvidas .container .accordion .accordion-item .answer p {
-  color: #fff;
-  font-size: 1rem;
-  padding: 1rem;
-}
-
-#duvidas .container .accordion .accordion-item:target .answer {
-  max-height: 30rem;
-}
-
-#duvidas .container .accordion .accordion-item:target .accordion-link .ion-md-add {
-  display: none;
-}
-
-#duvidas .container .accordion .accordion-item:target .accordion-link .ion-md-remove {
-  display: block;
+#duvidas .container .faq .faq-list .faq-answer.active {
+  max-height: 1200px;
 }
 
 #duvidas img {
@@ -801,6 +770,18 @@ footer .container .row .col-sm .fm-pagamento {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #duvidas .container {
+    padding: 40px 0;
+  }
+  #duvidas .container .faq .faq-list {
+    padding: 20px;
+  }
+  #duvidas .container .faq .faq-list .faq-question {
+    font-size: 18px;
+  }
+  #duvidas .container .faq .faq-list .faq-answer p {
+    font-size: 16px;
   }
   #garantia .container .row .col-sm {
     display: -webkit-box;

@@ -130,13 +130,33 @@
         }
       }
 
-    #garantia {
+      #duvidas {
       
         .container {
+          padding: 40px 0;
       
+          .faq {
+            
+            .faq-list {
+                padding: 20px;
+      
+              .faq-question {
+                font-size: 18px;
+              }
+
+              .faq-answer {
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    #garantia {
+        .container {
             .row {
-                
-      
                 .col-sm {
                     display: flex;
                     align-items: center;
@@ -153,7 +173,7 @@
 
                     img {
                         padding-top: 3em;
-                      }
+                    }
                 }
             }
         }  

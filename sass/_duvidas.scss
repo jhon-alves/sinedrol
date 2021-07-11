@@ -16,88 +16,64 @@
 #duvidas {
   background: #101010;
   width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   .container {
-    width: 100%;
-    max-width: 60rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 40px;
 
-    .accordion { 
-      margin-bottom: 20px;
-    
-      .accordion-item {
-        background: #ffff00;
-        border-radius: .4rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+    .faq {
+      width: 100%;
+      color: #fff;
 
-        .accordion-link {
-          font-size: 1.1rem;
-          font-weight: 600;
-          color: #000;
-          text-decoration: none;
-          background: #ffff00;
-          width: 100%;
+      .faq-list {
+        margin: 50px auto;
+
+        .faq-question,
+        .faq-answer {
+          background: #303030;
+        }
+
+        .faq-question {
+          padding: 20px 30px;
           display: flex;
-          align-items: center;
           justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          margin-top: 8px;
+          margin-bottom: 1px;
+          font-size: 20px;
 
-          ion-icon {
-            color: #e7d5ff;
-            padding: .5rem;
-          }
-
-          .ion-md-remove {
-            display: none;
+          &::after {
+            content: " ";
+            display: block;
+            width: 17px;
+            height: 17px;
+            background: url('../img/x.svg') no-repeat center;
+            transform: rotate(0deg);
           }
         }
 
-        .answer {
+        .faq-question.active::after {
+          transform: rotate(45deg);
+        }
+
+        .faq-answer {
           max-height: 0;
           overflow: hidden;
-          position: relative;
-          background-color: #101010;
-          transition: max-height 650ms;
-          border-radius: .4rem;
+          transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
 
-          &::before {
-            color: "";
-            position: absolute;
-            width: .6rem;
-            height: 90%;
-            background: #8fc460;
-            top: 50%;
-            left: 0;
-            transform:  translateY(-50%);
+          p {
+            font-size: 17px;
+            padding: 20px 30px;
           }
         }
-        .answer p {
-          color:#fff;
-          font-size: 1rem;
-          padding: 1rem;
+
+        .faq-answer.active {
+          max-height: 1200px;
         }
-      }
-
-      .accordion-item:target .answer {
-        max-height: 30rem;
-      }
-
-      .accordion-item:target .accordion-link .ion-md-add {
-        display: none;
-      }
-
-      .accordion-item:target .accordion-link .ion-md-remove {
-        display: block;
       }
     }
   }
