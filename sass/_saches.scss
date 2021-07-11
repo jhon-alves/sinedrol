@@ -2,7 +2,7 @@
   background: #101010; 
   width: 100%;
   height: auto;
-  padding: 50px 0 20px 0;
+  padding-top: 4em;
   
   h1 {
     color: #fff;
@@ -12,7 +12,7 @@
 
     span {
       font-weight: 800;
-      color: #ffff00;
+      color: #ffea00;
       font-size: 38px;
     }
   }
@@ -28,59 +28,41 @@
 }
 
 #saches {
-  background: url('../img/faq-bg.png');
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 40px;
+  background-color: #101010;
 
-  h1 {
+  .bg-color {
+    background: url('../img/bg-chemical.svg');
+    background-repeat: no-repeat;
     width: 100%;
-    background: #101010;
-    color: #fff;
-    font-size: 37px;
-    font-weight: 800;
-    padding: 15px 0;
-    text-align: center;
 
-    span {
-      color: #3acf2b;
-    }
-  }
-
-  .container {
-    padding-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .row {
-      max-width: 1200px;
-      flex: 1;
+    .container {
+      padding: 4em 0;
       display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .row {
+        display: flex;
         align-items: center;
         justify-content: center;
+        gap: 20px;
 
-      .col-sm {
-        width: 0;
-        margin: 0;
-        float: left;
-        
-        a {
+        .col-sm {
+          width: auto;
+          margin: 0;
           
-          .box {
-            width: 280px;
-            border-radius: 20px;
-            border: 3px solid #000;
-          }
+          a {
+            .box {
+              width: 280px;
+              border-radius: 20px;
+              box-shadow: 0 0 1em gold;
+            }
 
-          .box-center {
-            width: 350px;
-            border-radius: 20px;
-            border: 3px solid #000;
+            .box-center {
+              width: 350px;
+              border-radius: 20px;
+              box-shadow: 0 0 1em gold;
+            }
           }
         }
       }

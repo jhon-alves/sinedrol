@@ -8,13 +8,14 @@
 @media only screen and (max-width: 800px) {
     * {
         margin: 0 auto;
+        padding: 0;
     }
 
     header {
         border-bottom: 3px solid #101010;
 
         .logo {
-            width: 300px;
+            width: 200px;
         }
 
         .ornament {
@@ -24,67 +25,81 @@
 
     #banner {
         padding: 10px 0;
-        margin: 0;
+        margin: 0 auto;
     
-        .container-fluid {
+        .container {
     
             .row {
-                display: flex;
-                align-items: center;
-                justify-content: center;   
+                width: 400px;
 
                 .col-sm {
                     display: flex;
                     align-items: center;
-                    flex-direction: column;
+                    justify-content: center;
                     
                     img {
-                        width: 85%;
+                        width: 55%;
                     }
     
                     h1 {
                         font-size: 30px;
                         text-align: center;
                     }
-    
-                    a {
-                        width: 90%;
-                        padding: 10px;
-                    }
                 }
             }
-        } 
+        }
     }
 
     #saches {
-     
-        h1 {
-          font-size: 30px;
-        }
-      
-        .container {
-            
-      
-          .row {
-            width: 100%;
-                 
-            .col-sm {
-                width: 100%;
-                padding-top: 30px;
-                margin: 0 auto;
-              
-              a {
-                
-                img {
-                  width: 270px;
+        .bg-color {
+            .container {
+                .row {
+                    flex-direction: column;
+                        
+                    .col-sm {
+                        width: auto;
+                        padding-top: 30px;
+                        margin: 0 auto;
+                    }
                 }
+            }
+        }
+    }
+
+    #sobre {
+        
+        .container {
+          
+          .row {
+            margin: 0 auto;
+
+            .text-center {
+                margin: 0;
+            }
+
+            .col-sm {
+              padding: 0;
+      
+              img {
+                width: 150px;
+              }
+      
+      
+              p {
+                line-height: 1.5;
+                font-weight: 600;
+                color: #fff;
               }
             }
           }
         }
-    }
+      }
 
     .title-resultados {
+
+        h3 {
+            padding: 10px;
+        }
 
         .container {
             margin: 0;
@@ -102,6 +117,7 @@
           padding: 10px 0;
 
           .row {
+              width: 100%;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -109,11 +125,6 @@
             .col-sm {
                 display: flex;
                 align-items: center;
-                padding-top: 30px;
-
-                .foto1, .foto2 {
-                    width: 80%;
-                }
             }
           }
         }
@@ -124,8 +135,13 @@
         .container {
       
             .row {
+                
       
                 .col-sm {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                
       
                     h1 {
                         text-align: center;
@@ -134,22 +150,13 @@
                     p {
                         text-align: center;
                     }
+
+                    img {
+                        padding-top: 3em;
+                      }
                 }
             }
         }  
-    }
-
-    #adquirir {
-      
-        .container {
-
-      
-            a {
-                font-size: 34px;
-                width: 350px;
-                padding: 20px;
-            }
-        }
     }
 
     footer {
@@ -167,4 +174,41 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1250px) {
+    #banner {
+        .container-fluid {
+            width: 100%;
+        }
+    }
+
+    #saches {
+        .bg-color { 
+            .container {
+                width: 100%;
+
+                .row {
+                    flex-direction: column;
+
+                    .col-sm {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #resultados {
+        .container {
+          .row {
+              grid-template-columns: repeat(2, auto);
+
+            .col-sm {
+                display: flex;
+                align-items: center;
+            }
+          }
+        }
+      }
 }

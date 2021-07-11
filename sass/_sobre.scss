@@ -1,6 +1,6 @@
 .title-sobre {
   background: #101010;
-  padding-top: 50px;
+  padding-top: 4em;
   
   h1 {
     color: #fff;
@@ -9,7 +9,7 @@
     margin: 0;
 
     span {
-      color: #fff300;
+      color: #ffea00;
     }
   }
 }
@@ -19,14 +19,21 @@
   width: 100%;
   
   .container {
-    padding: 40px 0;
+    padding: 4em 0;
     
     .row {
       width: 100%;
-      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .col-sm {
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
         img {
           width: 170px;
@@ -39,7 +46,7 @@
         }
 
         p {
-          padding: 10px;
+          padding: 10px 20px;
           line-height: 27px;
           font-weight: 600;
           color: #fff;

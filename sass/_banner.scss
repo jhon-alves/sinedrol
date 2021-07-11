@@ -1,47 +1,61 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
+.container {
+    padding: 0;
+}
+
 header {
     width: 100%;
     height: auto;
-    background: #ffff00;
+    background: #ffea00;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px 0;
+    padding: 0;
+
+    .ornament {
+        width: 40%;
+    }
 
     .logo {
         width: 200px;
     }
-
 }
 
 #banner {
-    background: #ffff00;
+    background:#ffea00;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 
-    .container-fluid {
-        width: 1200px;
+    .container {
+        max-width: 1200px;
         text-align: center;
         padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .row {
             display: flex;
             align-items: center;
+            justify-content: center;
 
             .col-sm {
-                
+                width: auto;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+
                 img {
-                    width: 60%;
+                    width: 400px;
                 }
 
                 h1 {
@@ -56,6 +70,7 @@ header {
                     font-weight: 500;
                     color: #101010;
                     text-align: left;
+                    padding: 10px 0;
                     
                     span {
                         font-size: 20px;
@@ -69,7 +84,7 @@ header {
                     color: #101010;
                     display: flex; 
                     align-items: center;
-                    justify-content: left;
+                    justify-content: start;
                     text-transform: uppercase;
 
                     .check {
@@ -80,27 +95,8 @@ header {
                     }
                 }
 
-                a {
-                    width: 350px;
-                    color: #fff;
-                    text-decoration: none;
-                    background: #3acf2b;
-                    padding: 20px;
-                    font-weight: 700;
-                    font-size: 37px;
-                    text-transform: uppercase;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                    font-family: 'Allerta Stencil';
-                    transition: background 1s;
-                    float: left;
-
-                    &:hover {
-                        background: #3bb78f;
-                    }
-                }
-
                 .selo-garantia {
+                    margin-top: 10px;
                     width: 350px;
                     float: left;
                 }
